@@ -11,10 +11,37 @@ namespace Sorting
         //Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
         public void SortData(int [] arr)
         {
+
             for (int i = 0; i < arr.Length; i++)
                 for (int j = 1; j < arr.Length; j++)
                     if (arr[j] < arr[j - 1])
                         Swap(arr, j, j - 1);
+
+        }
+
+        public void OptomizeSortData(int[] arr)
+        {
+            bool swapped;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                swapped = false;
+                for (int j = 1; j < arr.Length; j++)
+                {
+                    if (arr[j] < arr[j - 1])
+                    {
+                        Swap(arr, j, j - 1);
+                        swapped = true;
+                    }
+
+                }
+
+                if (swapped == false)
+                    break;
+
+
+
+            }
+
 
         }
 
