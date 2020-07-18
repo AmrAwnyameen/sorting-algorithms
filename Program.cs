@@ -10,7 +10,7 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            var arr = new int[] { 6, 2, 3, 0, 8, 4, 9, 1 };
+            var arr = new int[] { 6, 2, 3,  4, };
 
             Console.WriteLine("BubbleSort");
             BubbleSort sort = new BubbleSort();
@@ -22,8 +22,17 @@ namespace Sorting
             SelectionSort selectionSort = new SelectionSort();
             selectionSort.SortData();
             selectionSort.arr2.ToList().ForEach(s => Console.WriteLine(s.ToString()));
-          
-        
+
+
+
+            Console.WriteLine("Insertion Sort");
+            InsertionSort InsertionSort = new InsertionSort();
+            InsertionSort.sort(arr);
+           arr.ToList().ForEach(s => Console.WriteLine(s.ToString()));
+
+
+
+
             Console.ReadLine();
 
         }
