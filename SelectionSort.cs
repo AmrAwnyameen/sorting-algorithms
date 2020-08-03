@@ -18,7 +18,7 @@ namespace Sorting
     /// </summary>
     public class SelectionSort
     {
-        public int[] arr2 = new int[] { 6, 2, 3, 8, 4, 1, 20 };
+        public int[] arr2 = new int[] { 6, 2, 3 };
 
         public void SortData()
         {
@@ -33,8 +33,7 @@ namespace Sorting
                 }
                 Swap(arr2, mindIndex, i);
             }
-
-
+            
         }
 
 

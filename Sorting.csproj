@@ -53,7 +53,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BigO\bigo.png" />
+    <Content Include="BigO\chrome_KDbrq87AS0.png" />
+    <Content Include="SnapShots\BubbleSort\bubble-sort1 %281%29.png" />
+    <Content Include="SnapShots\InsertionSort\insertionsort.png" />
+    <Content Include="SnapShots\SelectionSort\Selection-sort-flowchart - Copy.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
