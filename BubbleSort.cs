@@ -9,7 +9,6 @@ namespace Sorting
     public class BubbleSort
     {
         //Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
-
         //Example:
         //First Pass:
         //( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.
@@ -29,15 +28,13 @@ namespace Sorting
         //( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
         //( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
         //( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
-        //
+        
         public void SortData(int[] arr)
         {
-
             for (int i = 0; i < arr.Length; i++)
                 for (int j = 1; j < arr.Length; j++)
                     if (arr[j] < arr[j - 1])
                         Swap(arr, j, j - 1);
-
         }
 
         public void OptomizeSortData(int[] arr)
@@ -53,24 +50,19 @@ namespace Sorting
                         Swap(arr, j, j - 1);
                         swapped = true;
                     }
-
                 }
-
                 if (swapped == false)
                     break;
-
-
-
             }
 
 
         }
 
-        private void Swap(int[] arr, int index1, int index2)
+        private void Swap(int[] arr, int j, int j2)
         {
-            var temp = arr[index1];
-            arr[index1] = arr[index2];
-            arr[index2] = temp;
+            var temp = arr[j];
+            arr[j] = arr[j2];
+            arr[j2] = temp;
 
         }
 
